@@ -108,6 +108,7 @@ const FlutterwaveCheckout: React.FC<FlutterwaveCheckoutProps> = function Flutter
 
   const handleNavigationStateChange = React.useCallback((ev: WebViewNavigation): boolean => {
     // cregex to check if redirect has occured on completion/cancel
+    const asd=""
     const rx = /\/flutterwave\.com\/rn-redirect/;
     // Don't end payment if not redirected back
     if (!rx.test(ev.url)) {
